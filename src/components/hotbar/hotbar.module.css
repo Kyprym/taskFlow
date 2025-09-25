@@ -1,0 +1,22 @@
+.hotbar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #F7F7F7;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.hotbarIconContainer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.hotbarIcon {
+  width: 3rem;
+  height: 3rem;
+}/*# sourceMappingURL=hotbar.module.css.map */

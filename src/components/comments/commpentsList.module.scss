@@ -1,0 +1,7 @@
+@use '../../css/vars.module.scss' as vars;
+
+
+.commentsListStyle{
+    padding-top: vars.$header-height + 1rem;
+    background-color: vars.$content-color-white-theme;
+}

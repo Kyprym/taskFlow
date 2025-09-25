@@ -1,0 +1,29 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F7F7F7;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 6rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.task span {
+  padding-left: 0.5rem;
+}
+
+.taskComplatedStateTrue {
+  fill: #43B5A0;
+  color: #F7F7F7;
+  width: 3rem;
+  height: 3rem;
+}
+
+.taskComplatedStateFalse {
+  color: #969696;
+  width: 3rem;
+  height: 3rem;
+}/*# sourceMappingURL=task.module.css.map */

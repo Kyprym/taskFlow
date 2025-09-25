@@ -1,0 +1,11 @@
+@use '../../css/vars.module.scss' as vars;
+
+
+.postListStyle{
+    margin-top: vars.$header-height;
+    padding-top: 1rem;
+    background-color: vars.$content-color-white-theme;
+    display: flex;
+    flex-direction: column;
+
+}

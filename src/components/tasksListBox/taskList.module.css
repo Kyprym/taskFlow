@@ -1,0 +1,8 @@
+.tasksList {
+  display: inline-flexbox;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #BAD4C5;
+  padding-top: 6rem;
+}/*# sourceMappingURL=taskList.module.css.map */

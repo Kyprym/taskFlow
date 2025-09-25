@@ -1,0 +1,45 @@
+@use '../../..//css//vars.module.scss' as vars;
+
+
+
+.addTaskContainer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    margin-bottom: vars.$footer-height;
+    color: black;
+    font-size: 1.2rem;
+    z-index: 1000;
+    background-color: vars.$background-color-White-theme;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    input{
+        font-size: 1.3rem;
+        width: 65%;
+        height: 2.5rem;
+        margin-left: 5%;
+    }
+    
+    .addButton{
+        color: vars.$background-color-White-theme;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 25%;
+        padding: 0.15rem;
+        font-size: 1.8rem;
+        border-radius: 10px;
+        background-color: vars.$logo-color-white-theme;
+    }
+    .addButton:hover{
+        color: vars.$background-color-White-theme;
+        width: 25%;
+        padding: 0.15rem;
+        font-size: 1.8rem;
+        border-radius: 10px;
+        background-color: vars.$text-color-white-theme;
+    }
+}

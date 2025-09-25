@@ -1,0 +1,43 @@
+@use '../../css/vars.module.scss' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.headerStyle{
+    color: vars.$text-color-white-theme;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: vars.$header-height;
+    display: flex;
+    background-color: vars.$background-color-White-theme;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    justify-content: space-between;  
+    align-items: center;
+    box-shadow: vars.$low-box-shadow;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  }
+
+.logoText{
+    font-size: vars.$logo-text-size-mobile;
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.headerStyle{
+  .logo {
+    path {
+      fill: vars.$logo-color-white-theme;
+    }
+    width: vars.$logo-size-mobile;
+    height: vars.$logo-size-mobile;
+  }
+}

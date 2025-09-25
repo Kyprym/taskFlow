@@ -1,0 +1,11 @@
+@use '../../../css/vars.module.scss' as vars;
+
+.SearchButtonStyleDeactive {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.SearchButtonStyleDeactive:hover{
+  color:vars.$logo-color-white-theme;
+}
+

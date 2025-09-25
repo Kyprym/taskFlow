@@ -1,0 +1,72 @@
+@use '../../../css/vars.module.scss' as vars;
+
+.modalSettingWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.childSettingModalWindow{
+    bottom: vars.$footer-height;
+    background: vars.$background-color-White-theme;
+    padding: 2rem;
+    border-radius: 8px;
+    height: 30rem;
+    width: 90%;
+    position: relative;
+}
+.closeIcon{
+    width: vars.$icon-size-mobile;
+    height: vars.$icon-size-mobile;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.settingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    input{
+        font-size: 1.3rem;
+        width: 95%;
+        height: 2rem;
+    }
+    .buttonContainer{
+        margin-top: 0.7rem;
+        display: flex;
+        justify-content: center;
+    }
+    .findButton{
+        color: vars.$background-color-White-theme;
+        width: 50%;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        border-radius: 10px;
+        background-color: vars.$logo-color-white-theme;
+    }
+    .findButton:hover{
+        color: vars.$background-color-White-theme;
+        width: 50%;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        border-radius: 10px;
+        background-color: vars.$text-color-white-theme;
+    }
+}
+.errorText{
+        font-size: 1.1rem;
+        color:rgb(219, 46, 46)
+    }
