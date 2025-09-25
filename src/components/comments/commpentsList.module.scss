@@ -5,3 +5,14 @@
     padding-top: vars.$header-height + 1rem;
     background-color: vars.$content-color-white-theme;
 }
+
+@media (min-width:1024px){
+    .commentsListStyle{
+            padding-top: vars.$header-height + 1rem;
+            background-color: vars.$content-color-white-theme;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+    }
+}

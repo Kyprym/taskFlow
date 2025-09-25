@@ -4,9 +4,11 @@ import PostsIcon from '../../assets/svg/comments.svg?react'
 import HotbarSyle from './hotbar.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeContentStateAction } from '../../store/actions'
-import type { ContentState } from '../pages/contentPage'
 import type { RootReducer } from '../../store/reducers/rootReducer'
 
+export type ContentState = {
+    tasks:boolean; posts:boolean; comments:boolean
+}
 
 export const activeTasksContent:ContentState = {tasks:true, posts:false, comments:false}
 const activePostsContent:ContentState = {tasks:false, posts:true, comments:false}

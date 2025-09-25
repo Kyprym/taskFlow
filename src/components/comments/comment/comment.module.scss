@@ -2,35 +2,50 @@
 
 
 .comment {
-  border-left: 3px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background: vars.$background-color-White-theme;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+    border-left: 3px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: vars.$background-color-White-theme;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .commentHeader {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .commentAuthor {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
 }
 
 .commentEmail {
-  font-style: normal;
-  color: #555;
+    font-style: normal;
+    color: #555;
 }
 
 .commentBody {
-  margin: 0;
-  line-height: 1.5;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media(min-width:1024px){
+  .comment {
+      border-left: 3px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background: vars.$background-color-White-theme;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      width: 60rem;
+      font-size: 1.3rem;
+  }
 }

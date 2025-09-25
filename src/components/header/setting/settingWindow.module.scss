@@ -8,9 +8,10 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -23,6 +24,7 @@
     border-radius: 8px;
     height: 30rem;
     width: 90%;
+    z-index: 1001;
     position: relative;
 }
 .closeIcon{
@@ -32,6 +34,16 @@
     top: 1rem;
     right: 1rem;
 }
+
+.closeIcon:hover{
+    width: vars.$icon-size-mobile;
+    height: vars.$icon-size-mobile;
+    position: absolute;
+    color: vars.$logo-color-white-theme;
+    top: 1rem;
+    right: 1rem;
+}
+
 .settingContainer{
     display: flex;
     flex-direction: column;
@@ -69,4 +81,55 @@
 .errorText{
         font-size: 1.1rem;
         color:rgb(219, 46, 46)
+    }
+
+    @media (min-width:1024px){
+        .settingContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-items: center;
+            margin-top: 1rem;
+            color: black;
+            font-size: 1.2rem;
+                input{
+                    font-size: 2rem;
+                    width: 30rem;
+                    height: 3rem;
+
+                }
+                .buttonContainer{
+                    margin-top: 1.5rem;
+                    width: 15rem;
+                    height: 3rem;
+                }}
+                .titleInput{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .childSettingModalWindow{
+                    bottom: vars.$footer-height;
+                    background: vars.$background-color-White-theme;
+                    padding: 2rem;
+                    border-radius: 8px;
+                    height: 30rem;
+                    width: 50%;
+                    position: relative;
+                }
+        .closeIcon{
+            width: vars.$icon-size-mobile + 1rem;
+            height: vars.$icon-size-mobile + 1rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        .closeIcon:hover{
+            width: vars.$icon-size-mobile + 1rem;
+            height: vars.$icon-size-mobile + 1rem;
+            position: absolute;
+            color: vars.$logo-color-white-theme;
+            top: 1rem;
+            right: 1rem;
+        }
+
     }

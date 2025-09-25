@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import type { RootReducer } from '../../../store/reducers/rootReducer'
 import type { Tasklist } from '../../tasksListBox/TasksList'
 import { searchFragment } from '../../../supportFunc/scroll'
-import { Task, type TaskProps } from '../../task/task'
+import { Task } from '../../task/task'
 import { taskTypeGuard } from '../../tasksListBox/taskListTypeGuards'
 
 export const SettingWindow = ({close}:{close:()=>void}) =>{
@@ -44,12 +44,14 @@ export const SettingWindow = ({close}:{close:()=>void}) =>{
                     <Close className={StyleSettingWindow.closeIcon} onClick={close}/>
                     
                     <div className={StyleSettingWindow.settingContainer}>
-                        <span>Enter the text you want to find</span>
+                        <div className={StyleSettingWindow.titleInput}>
+                            <span>Enter the text you want to find</span>
                          <input 
                             type='text'
                             value={inputState}
                             onChange={changeInput}
                          />
+                        </div>
                          <div className={StyleSettingWindow.buttonContainer}>
                             <button 
                                 className={StyleSettingWindow.findButton}

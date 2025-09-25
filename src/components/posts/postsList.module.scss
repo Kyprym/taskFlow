@@ -7,5 +7,18 @@
     background-color: vars.$content-color-white-theme;
     display: flex;
     flex-direction: column;
+}
 
+
+@media (min-width: 1024px){
+    .postListStyle{
+        margin-top: vars.$header-height;
+        padding-top: 1rem;
+        background-color: vars.$content-color-white-theme;
+        display: inline-flexbox;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
 }

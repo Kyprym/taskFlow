@@ -20,8 +20,7 @@ const TasksList = () =>{
     return <div className={tasksListStyle.tasksList}>
        
         {renderedTasks}
-        <AddTask/>
-
+        < AddTask/>
     </div>
 }
 

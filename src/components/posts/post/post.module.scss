@@ -24,3 +24,17 @@
   color: #475569;
   margin: 0;
 }
+
+@media(min-width:1024px){
+  .post {
+  background-color: vars.$background-color-White-theme;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 50rem;
+
+}
+}
